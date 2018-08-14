@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  width: 100%;
+  color: #e5e5e5;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  /* -webkit-font-smoothing: antialiased; */
+  font-size: 14px;
+  font-weight: 300;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 50px;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+}
+
+#social {
+  position: absolute;
+  left: 0;
+  margin: 16px;
+}
+#social a {
+  text-decoration: none;
+  color: #e5e5e5;
+  margin-right: 8px;
+}
+#social a:hover, #about a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 168px;
+  float: right;
+  background: url(../images/logo.png);
+  background-size: 50px;
+}
+
+#about {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 16px;
+}
+#about a {
+  text-decoration: none;
+  color: #e5e5e5;
+  margin-left: 8px;
+
+}
