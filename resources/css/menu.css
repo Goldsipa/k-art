@@ -28,12 +28,28 @@ nav:hover {
   padding: 0 16px;
   /* border: 1px solid white; */
 }
-.item-title {
+.menu-item-title {
   display: block;
   margin: 16px 0;
+  cursor: pointer;
 }
-.item-text {
+.menu-item-title:hover {
+  color: #fff;
+}
+.menu-item-text {
   display: none;
+}
+.menu-item-text p {
+  display: block;
+  text-decoration: none;
+  color: #e5e5e5;
+  cursor: pointer;
+  margin: 8px 0;
+  font-size: 12px;
+}
+.menu-item-text p:hover {
+  color: #fff;
+  /* text-decoration: underline; */
 }
 .expandable {
   display: block;
@@ -51,3 +67,5 @@ nav:hover {
   margin-bottom: 16px;
   transition: max-height 0.3s ease-in, opacity 0.3s ease-in, margin-bottom 0.3s ease-in;
 }
+
+.animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
