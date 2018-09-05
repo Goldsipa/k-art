@@ -22,7 +22,6 @@
   width: 100%;
   height: calc(28.125vw - 112.5px);
   /* border: 1px solid #333; */
-  background-image: url(../images/folder.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
