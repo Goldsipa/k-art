@@ -2,6 +2,7 @@
   margin-top: 50px;
   height: calc(100% - 50px);
   padding: 40px;
+  /* background-color: #e5e5e5; */
 }
 .article-image {
   background-image: url(../images/folder.jpg);
@@ -24,6 +25,11 @@
   column-gap: 80px;
   column-rule: 1px solid #e5e5e5;
 }
+.article-text h2 {
+  text-align: center;
+  color: #252525;
+  margin-top: 0px;
+}
 .article-text p {
   margin: 0 0 16px 0;
 
@@ -31,5 +37,11 @@
   font-size: 16px;
   line-height: 22px;
   text-indent: 20px;
-  
+  text-align: justify;
+}
+.article-timestamp {
+  text-align: center !important;
+  color: #79828B !important;
+  font-style: italic !important;
+  font-size: 14px !important;
 }
