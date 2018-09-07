@@ -9,6 +9,10 @@ header {
   color: #e5e5e5;
   text-align: center;
 }
+header a img {
+  height: 30px;
+  padding-top: 10px;
+}
 
 #social {
   position: absolute;
@@ -23,16 +27,6 @@ header {
 #social a:hover, #about a:hover {
   color: #fff;
   text-decoration: underline;
-}
-
-#logo {
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin-right: 168px;
-  float: right;
-  background: url(../images/logo.png);
-  background-size: 50px;
 }
 
 #about {
