@@ -24,7 +24,7 @@
   padding-left: 30%;
   padding-right: 20%;
   margin: 14px 0;
-  box-sizing: border-box; 
+  box-sizing: content-box 
 }
 .map {
   width: 62.5%;
@@ -32,4 +32,50 @@
   float: left;
   box-sizing: border-box;
   padding: 40px;
+}
+
+@media (max-width: 540px) {
+  .about {
+    position: initial;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .about-content {
+    position: inherit;
+  }
+  .contacts {
+    width: 100%;
+    margin: 20px 0;
+    background: none;
+  }
+  .contact {
+    text-align: center;
+    padding: 0;
+    margin: 4px 0;
+  }
+  .map {
+    width: 100%;
+    padding: 0;
+    /* min-height: 100vw; */
+  }
+  .map iframe {
+    height: 100vw;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 768px) {
+  .contacts {
+    width: calc(37.5% - 8px);
+    height: calc(100% - 16px);
+    margin: 8px 0 8px 8px;
+    padding: 0;
+  }
+  .contact {
+    text-align: center;
+    padding: 0;
+    margin: 4px 0;
+  }
+  .map {
+    padding: 8px;
+  }
 }
