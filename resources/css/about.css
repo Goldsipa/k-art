@@ -34,7 +34,7 @@
   padding: 40px;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 539px) {
   .about {
     position: initial;
     width: 100%;
@@ -45,7 +45,7 @@
   }
   .contacts {
     width: 100%;
-    margin: 20px 0;
+    margin: 24px 0 32px 0;
     background: none;
   }
   .contact {
@@ -63,7 +63,7 @@
   }
 }
 
-@media (min-width: 541px) and (max-width: 768px) {
+@media (min-width: 540px) and (max-width: 767px) {
   .contacts {
     width: calc(37.5% - 8px);
     height: calc(100% - 16px);

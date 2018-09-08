@@ -22,7 +22,7 @@
 .item-info-title {
   font-size: 28px;
   margin: 20px 0;
-  padding: 0 12px;
+  padding: 0 10%;
   box-sizing: border-box;
 }
 .item-info-title::after {
@@ -36,7 +36,7 @@
 .item-info-description {
   font-size: 18px;
   margin: 20px 0;
-  padding: 0 10%;
+  padding: 0 20%;
   box-sizing: border-box;
 }
 .item-image {
@@ -50,10 +50,11 @@
   filter: brightness(110%);
 }
 
-@media (max-width: 540px) {
+@media (max-width: 539px) {
   .item-info-title {
     font-size: 12px;
     margin: 8px 0;
+    padding: 0 8px;
     box-sizing: border-box;
   }
   .item-info-title::after {
@@ -62,9 +63,10 @@
   .item-info-description {
     font-size: 12px;
     margin: 8px 0;
+    padding: 0 8px;
   }
 }
-@media (min-width: 541px) and (max-width: 768px) {
+@media (min-width: 540px) and (max-width: 767px) {
   .item-info-title {
     font-size: 18px;
     margin: 8px 0;
@@ -75,5 +77,11 @@
   .item-info-description {
     font-size: 14px;
     margin: 8px 0;
+    padding: 0 15%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .item-info-description {
+    padding: 0 15%;
   }
 }

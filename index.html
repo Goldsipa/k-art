@@ -10,7 +10,9 @@
   <link rel="shortcut icon" href="resources/images/logo_big.jpg" type="image/x-icon">
   <link rel="stylesheet" href="resources/css/my-index.css">
   <link rel="stylesheet" href="resources/css/header.css">
+  <link rel="stylesheet" href="resources/css/story.css">
   <link rel="stylesheet" href="resources/css/menu.css">
+  <link rel="stylesheet" href="resources/css/menu-sm.css">
   <link rel="stylesheet" href="resources/css/content.css">
   <link rel="stylesheet" href="resources/css/footer.css">
 </head>
@@ -80,34 +82,92 @@
         <div>
           <p class="menu-item-title" onclick="openCity('tab03', 'item30')">интерьерное оформление помещений</p>
           <div class="menu-item-text expandable">
-            <p onclick="openCity('tab03', 'item30')">брендинг (обьемное logo на стене, стойке ресепции)</p>
-            <p onclick="openCity('tab03', 'item31')">оформление входной группы стойки ресепшн, светльники и т.д.)</p>
+            <p onclick="openCity('tab03', 'item30')">брендинг</p>
+            <p onclick="openCity('tab03', 'item31')">оформление входной группы</p>
             <p onclick="openCity('tab03', 'item32')">оформление навигационной системы</p>
             <p onclick="openCity('tab03', 'item33')">дизайнерские обои с различными фактурами</p>
             <p onclick="openCity('tab03', 'item34')">стеклянный, акриловый фартук для кухни</p>
-            <p onclick="openCity('tab03', 'item35')">светильники с led подсветкой (акрила, метала, меди и т.д.)</p>
+            <p onclick="openCity('tab03', 'item35')">светильники с led подсветкой</p>
             <p onclick="openCity('tab03', 'item36')">оформление стеклянных перегородок</p>
-            <p onclick="openCity('tab03', 'item37')">оформление корпоративных мероприятий рекламными материалами</p>
+            <p onclick="openCity('tab03', 'item37')">оформление корпоративных мероприятий</p>
           </div>
         </div>
       </div>
     </div>
   </nav>
 
-<!-- DIV WITH CONTENT THAT SHOULD BE TABS -->
+<!-- NAVIGATION FOR SMALL DEVICES WITH EXPANDABLE TABS AND ANIMATION ON HOVER -->
+<!-- ------------------------------------------------------------------------ -->
+  <div class="menu-sm">
+      <div class="menu-sm-item mid">
+          <div>
+            <p class="menu-sm-item-title">Цифровая и офсетная полиграфия</p>
+            <div class="menu-sm-item-text expandable">
+              <p onclick="openCity('tab00', 'item00')">буклеты</p>
+              <p onclick="openCity('tab00', 'item01')">каталоги</p>
+              <p onclick="openCity('tab00', 'item02')">фирменные папки</p>
+              <p onclick="openCity('tab00', 'item03')">альбомы с дизайнерскими обложками</p>
+              <p onclick="openCity('tab00', 'item04')">визитки</p>
+              <p onclick="openCity('tab00', 'item05')">открытки</p>
+              <p onclick="openCity('tab00', 'item06')">пригласительные</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-sm-item mid">
+          <div>
+            <p class="menu-sm-item-title">Широкоформатная и УФ печать</p>
+            <div class="menu-sm-item-text expandable">
+              <p onclick="openCity('tab01', 'item10')">самоклеющая пленка</p>
+              <p onclick="openCity('tab01', 'item11')">баннер, баннерная сетка</p>
+              <p onclick="openCity('tab01', 'item12')">бумага Blueback, Backlit</p>
+              <p onclick="openCity('tab01', 'item13')">холст</p>
+              <p onclick="openCity('tab01', 'item14')">плоскопечатная УФ печать на материалах:</p>
+              <p onclick="openCity('tab01', 'item15')">печать на дизайнерских обоях</p>
+              <p onclick="openCity('tab01', 'item16')">постпечатные услуги, порезка, фрезеровка</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-sm-item mid">
+          <div>
+            <p class="menu-sm-item-title">Наружная реклама</p>
+            <div class="menu-sm-item-text expandable">
+              <p onclick="openCity('tab02', 'item20')">вывески, лайтбокс, фреймлайт</p>
+              <p onclick="openCity('tab02', 'item21')">объемные фасадные конструкции с подсветкой</p>
+              <p onclick="openCity('tab02', 'item22')">конструктивы с широкоформатной рекламой на фасадах</p>
+              <p onclick="openCity('tab02', 'item23')">оклейка витрин самоклеющей пленкой</p>
+              <p onclick="openCity('tab02', 'item24')">оклейка авто самоклеющей пленкой</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-sm-item mid">
+          <div>
+            <p class="menu-sm-item-title">Интерьерное оформление помещений</p>
+            <div class="menu-sm-item-text expandable">
+              <p onclick="openCity('tab03', 'item30')">брендинг</p>
+              <p onclick="openCity('tab03', 'item31')">оформление входной группы</p>
+              <p onclick="openCity('tab03', 'item32')">оформление навигационной системы</p>
+              <p onclick="openCity('tab03', 'item33')">дизайнерские обои с различными фактурами</p>
+              <p onclick="openCity('tab03', 'item34')">стеклянный, акриловый фартук для кухни</p>
+              <p onclick="openCity('tab03', 'item35')">светильники с led подсветкой</p>
+              <p onclick="openCity('tab03', 'item36')">оформление стеклянных перегородок</p>
+              <p onclick="openCity('tab03', 'item37')">оформление корпоративных мероприятий</p>
+            </div>
+          </div>
+        </div>
+  </div>
+
+<!-- DIV WITH STORY ABOUT COMPANY -->
 <!-- ------------------------------------ -->
-  <section style="margin-top: 100px;">
-    <article class="item">
-      <div class="item-content">
-        <div class="item-image" style="background-image: url(resources/images/logo_big.jpg); background-size: 50%; background-repeat: no-repeat; background-color: #949599;">
+  <section class="story">
+    <article class="story-item">
+      <div class="story-item-content">
+        <div class="story-item-image" style="background-image: url(resources/images/logo_big.jpg); background-size: 50%; background-repeat: no-repeat; background-color: #949599;">
           
         </div>
-        <div class="item-info mid">
-          <div style="text-align: left; box-sizing: border-box;">
-            <h2 class="" style="font-family: London; margin: 20px 0; padding: 0 10%; box-sizing: border-box; display: block">
-              Our Story
-            </h2>
-            <p class="item-info-description" style="line-height: 26px">
+        <div class="story-item-info mid">
+          <div>
+            <h2 class="story-item-info-title">Our Story</h2>
+            <p class="story-item-info-description">
                 Еще вчера, а это чуть больше 10 лет назад ;),  мы знали все о широкоформатной полиграфии...  
                 баннерные ткани, самоклейка, бумага... но сегодня мы уже команда единомышленников, которая  
                 предлагает Вам, дорогие друзья, цифровую печать еще и на дизайнерских обоях и на 
@@ -124,6 +184,8 @@
     </article>
   </section>
   
+<!-- DIV WITH CONTENT THAT SHOULD BE TABS -->
+<!-- ------------------------------------ -->
   <!-- TAB 0: 7 -->
   <section id="tab00" class="items animate-opacity">
     <!-- 0 -->
@@ -469,7 +531,7 @@
       <div class="item-content">
         <div class="item-info mid">
           <div>
-            <h2 class="item-info-title">Брендинг (обьемное logo на стене, стойке ресепции)</h2>
+            <h2 class="item-info-title">Брендинг</h2>
             <p class="item-info-description">
               Многочисленные исследования по маркетингу показали, 
               что рекламный буклет – в лидерах по популярности, 
@@ -490,7 +552,7 @@
         </div>
         <div class="item-info mid">
           <div>
-            <h2 class="item-info-title">Оформление входной группы стойки ресепшн, светльники и т.д.)</h2>
+            <h2 class="item-info-title">Оформление входной группы</h2>
             <p class="item-info-description">
               Каталог можно считать идеальным решением для компаний, 
               ассортимент товаров и услуг которых постоянно пополняется. 
@@ -504,7 +566,7 @@
       <div class="item-content">
         <div class="item-info mid">
           <div>
-            <h2 class="item-info-title">Оформление навигационной системы в коммерческих помещениях с подсветкой и без.</h2>
+            <h2 class="item-info-title">Оформление навигационной системы</h2>
             <p class="item-info-description">
               Печать папок с корпоративной символикой, например, логотипом – 
               это создание и постоянное поддерживание имиджа компании на рынке услуг.
@@ -558,7 +620,7 @@
         </div>
         <div class="item-info mid">
           <div>
-            <h2 class="item-info-title">Светильники с led подсветкой с использованием акрила, метала, меди и т.д.</h2>
+            <h2 class="item-info-title">Светильники с led подсветкой</h2>
             <p class="item-info-description">
               Каталог можно считать идеальным решением для компаний, 
               ассортимент товаров и услуг которых постоянно пополняется. 
@@ -592,7 +654,7 @@
         </div>
         <div class="item-info mid">
           <div>
-            <h2 class="item-info-title">Оформление корпоративных мероприятий различными рекламными материалами (фотозона, сцена, лаунж зона для гостей)</h2>
+            <h2 class="item-info-title">Оформление корпоративных мероприятий</h2>
             <p class="item-info-description">
               Каталог можно считать идеальным решением для компаний, 
               ассортимент товаров и услуг которых постоянно пополняется. 
@@ -640,8 +702,16 @@
       document.getElementById(tab).style.display = "block";
       
       var rect = document.getElementById(item).getBoundingClientRect();
+      var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+      console.log(w);
+      var offset;
+      if(w < 768) {
+        offset = rect.top - 50;
+      } else {
+        offset = rect.top - 100;
+      }
       window.scrollBy({
-        top: rect.top - 100,
+        top: offset,
         behavior: "smooth"
       });
     }

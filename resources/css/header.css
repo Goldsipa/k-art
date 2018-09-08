@@ -11,7 +11,7 @@ header {
 }
 header a img {
   height: 30px;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 #social {
@@ -40,4 +40,16 @@ header a img {
   color: #e5e5e5;
   margin-left: 8px;
 
+}
+
+@media (max-width: 539px) {
+  header {
+    text-align: left;
+  }
+  header a img {
+    margin-left: 16px;
+  }
+  #social {
+    display: none;
+  }
 }

@@ -42,3 +42,16 @@ footer {
   height: 100%;
   float: right;
 }
+
+@media (max-width: 539px) {
+  #address * {
+    font-size: 12px;
+  }
+  .footer-legalinfo {
+    font-size: 12px;
+    padding: 0 20px 45px 20px
+  }
+  .footer-legalinfo p {
+    padding-top: 2px;
+  }
+}

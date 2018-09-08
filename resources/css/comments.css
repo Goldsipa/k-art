@@ -58,3 +58,39 @@
 .comment-form label {
   font-weight: bolder;
 }
+
+@media (max-width: 539px) {
+  .comments {
+    padding: 0 8px;
+  }
+  .comment {
+    padding: 0 8px;
+  }
+  .comment-form {
+    padding: 12px 8px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+  .comments {
+    padding: 0 32px;
+  }
+  .comment {
+    padding: 0 32px
+  }
+  .comment-form {
+    padding: 16px 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .comments {
+    padding: 0 64px;
+  }
+  .comment {
+    padding: 0 32px
+  }
+  .comment-form {
+    padding: 16px 32px;
+  }
+}

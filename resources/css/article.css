@@ -45,3 +45,38 @@
   font-style: italic !important;
   font-size: 14px !important;
 }
+
+@media (max-width: 539px) {
+  .article {
+    padding: 0;
+  }
+  .article-text {
+    margin-top: 16px;
+    padding: 0 16px;
+    column-count: auto;
+    column-gap: unset;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+  .article {
+    padding: 0;
+  }
+  .article-text {
+    margin-top: 16px;
+    padding: 8px 32px 32px 32px;
+    column-count: auto;
+    column-gap: unset;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .article {
+    padding: 0 0 32px 0
+  }
+  .article-text {
+    margin-top: 32px;
+    padding: 0 16px;
+    column-gap: 32px;
+  }
+}

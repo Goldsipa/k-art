@@ -25,12 +25,12 @@ nav:hover {
   float: left;
   width: 25%;
   box-sizing: border-box;
-  padding: 0 16px;
+  padding: 0 8px;
   /* border: 1px solid white; */
 }
 .menu-item-title {
   display: block;
-  margin: 16px 0;
+  margin: 0;
   cursor: pointer;
 }
 .menu-item-title:hover {
@@ -56,16 +56,28 @@ nav:hover {
   overflow: hidden;
   opacity: 0;
   max-height: 0;
-  margin-bottom: 0;
-  transition: max-height 0.3s ease, opacity 0.3s ease, margin-bottom 0.3s ease;
+  margin: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease, margin 0.3s ease;
 }
 .menu-item:hover .expandable {
   display: block;
   width: auto;
   opacity: 1;
   max-height: 300px;
-  margin-bottom: 16px;
-  transition: max-height 0.3s ease-in, opacity 0.3s ease-in, margin-bottom 0.3s ease-in;
+  margin: 8px 0;
+  transition: max-height 0.3s ease-in, opacity 0.3s ease-in, margin 0.3s ease-in;
 }
 
 .animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  nav:hover {
+    padding-bottom: 40%;
+  }
+}
