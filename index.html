@@ -99,61 +99,67 @@
 <!-- NAVIGATION FOR SMALL DEVICES WITH EXPANDABLE TABS AND ANIMATION ON HOVER -->
 <!-- ------------------------------------------------------------------------ -->
   <div class="menu-sm">
+    <div class="menu-sm-header mid" onclick="toggleMenu()">
+      <img class="menu-sm-arrow" src="resources/images/arrow_white.png" alt="">
+      <h4>Наши услуги</h4>
+    </div>
+    <div class="menu-sm-body expandable-sm">
       <div class="menu-sm-item mid">
-          <div>
-            <p class="menu-sm-item-title">Цифровая и офсетная полиграфия</p>
-            <div class="menu-sm-item-text expandable">
-              <p onclick="openCity('tab00', 'item00')">буклеты</p>
-              <p onclick="openCity('tab00', 'item01')">каталоги</p>
-              <p onclick="openCity('tab00', 'item02')">фирменные папки</p>
-              <p onclick="openCity('tab00', 'item03')">альбомы с дизайнерскими обложками</p>
-              <p onclick="openCity('tab00', 'item04')">визитки</p>
-              <p onclick="openCity('tab00', 'item05')">открытки</p>
-              <p onclick="openCity('tab00', 'item06')">пригласительные</p>
-            </div>
+        <div>
+          <p class="menu-sm-item-title" onclick="expandChild(0)">Цифровая и офсетная полиграфия</p>
+          <div class="menu-sm-item-text expandable-sm">
+            <p onclick="openCity('tab00', 'item00')">буклеты</p>
+            <p onclick="openCity('tab00', 'item01')">каталоги</p>
+            <p onclick="openCity('tab00', 'item02')">фирменные папки</p>
+            <p onclick="openCity('tab00', 'item03')">альбомы с дизайнерскими обложками</p>
+            <p onclick="openCity('tab00', 'item04')">визитки</p>
+            <p onclick="openCity('tab00', 'item05')">открытки</p>
+            <p onclick="openCity('tab00', 'item06')">пригласительные</p>
           </div>
         </div>
-        <div class="menu-sm-item mid">
-          <div>
-            <p class="menu-sm-item-title">Широкоформатная и УФ печать</p>
-            <div class="menu-sm-item-text expandable">
-              <p onclick="openCity('tab01', 'item10')">самоклеющая пленка</p>
-              <p onclick="openCity('tab01', 'item11')">баннер, баннерная сетка</p>
-              <p onclick="openCity('tab01', 'item12')">бумага Blueback, Backlit</p>
-              <p onclick="openCity('tab01', 'item13')">холст</p>
-              <p onclick="openCity('tab01', 'item14')">плоскопечатная УФ печать на материалах:</p>
-              <p onclick="openCity('tab01', 'item15')">печать на дизайнерских обоях</p>
-              <p onclick="openCity('tab01', 'item16')">постпечатные услуги, порезка, фрезеровка</p>
-            </div>
+      </div>
+      <div class="menu-sm-item mid">
+        <div>
+          <p class="menu-sm-item-title" onclick="expandChild(1)">Широкоформатная и УФ печать</p>
+          <div class="menu-sm-item-text expandable-sm">
+            <p onclick="openCity('tab01', 'item10')">самоклеющая пленка</p>
+            <p onclick="openCity('tab01', 'item11')">баннер, баннерная сетка</p>
+            <p onclick="openCity('tab01', 'item12')">бумага Blueback, Backlit</p>
+            <p onclick="openCity('tab01', 'item13')">холст</p>
+            <p onclick="openCity('tab01', 'item14')">плоскопечатная УФ печать на материалах:</p>
+            <p onclick="openCity('tab01', 'item15')">печать на дизайнерских обоях</p>
+            <p onclick="openCity('tab01', 'item16')">постпечатные услуги, порезка, фрезеровка</p>
           </div>
         </div>
-        <div class="menu-sm-item mid">
-          <div>
-            <p class="menu-sm-item-title">Наружная реклама</p>
-            <div class="menu-sm-item-text expandable">
-              <p onclick="openCity('tab02', 'item20')">вывески, лайтбокс, фреймлайт</p>
-              <p onclick="openCity('tab02', 'item21')">объемные фасадные конструкции с подсветкой</p>
-              <p onclick="openCity('tab02', 'item22')">конструктивы с широкоформатной рекламой на фасадах</p>
-              <p onclick="openCity('tab02', 'item23')">оклейка витрин самоклеющей пленкой</p>
-              <p onclick="openCity('tab02', 'item24')">оклейка авто самоклеющей пленкой</p>
-            </div>
+      </div>
+      <div class="menu-sm-item mid">
+        <div>
+          <p class="menu-sm-item-title" onclick="expandChild(2)">Наружная реклама</p>
+          <div class="menu-sm-item-text expandable-sm">
+            <p onclick="openCity('tab02', 'item20')">вывески, лайтбокс, фреймлайт</p>
+            <p onclick="openCity('tab02', 'item21')">объемные фасадные конструкции с подсветкой</p>
+            <p onclick="openCity('tab02', 'item22')">конструктивы с широкоформатной рекламой на фасадах</p>
+            <p onclick="openCity('tab02', 'item23')">оклейка витрин самоклеющей пленкой</p>
+            <p onclick="openCity('tab02', 'item24')">оклейка авто самоклеющей пленкой</p>
           </div>
         </div>
-        <div class="menu-sm-item mid">
-          <div>
-            <p class="menu-sm-item-title">Интерьерное оформление помещений</p>
-            <div class="menu-sm-item-text expandable">
-              <p onclick="openCity('tab03', 'item30')">брендинг</p>
-              <p onclick="openCity('tab03', 'item31')">оформление входной группы</p>
-              <p onclick="openCity('tab03', 'item32')">оформление навигационной системы</p>
-              <p onclick="openCity('tab03', 'item33')">дизайнерские обои с различными фактурами</p>
-              <p onclick="openCity('tab03', 'item34')">стеклянный, акриловый фартук для кухни</p>
-              <p onclick="openCity('tab03', 'item35')">светильники с led подсветкой</p>
-              <p onclick="openCity('tab03', 'item36')">оформление стеклянных перегородок</p>
-              <p onclick="openCity('tab03', 'item37')">оформление корпоративных мероприятий</p>
-            </div>
+      </div>
+      <div class="menu-sm-item mid">
+        <div>
+          <p class="menu-sm-item-title" onclick="expandChild(3)">Интерьерное оформление помещений</p>
+          <div class="menu-sm-item-text expandable-sm">
+            <p onclick="openCity('tab03', 'item30')">брендинг</p>
+            <p onclick="openCity('tab03', 'item31')">оформление входной группы</p>
+            <p onclick="openCity('tab03', 'item32')">оформление навигационной системы</p>
+            <p onclick="openCity('tab03', 'item33')">дизайнерские обои с различными фактурами</p>
+            <p onclick="openCity('tab03', 'item34')">стеклянный, акриловый фартук для кухни</p>
+            <p onclick="openCity('tab03', 'item35')">светильники с led подсветкой</p>
+            <p onclick="openCity('tab03', 'item36')">оформление стеклянных перегородок</p>
+            <p onclick="openCity('tab03', 'item37')">оформление корпоративных мероприятий</p>
           </div>
         </div>
+      </div>
+    </div>
   </div>
 
 <!-- DIV WITH STORY ABOUT COMPANY -->
@@ -714,6 +720,32 @@
         top: offset,
         behavior: "smooth"
       });
+    }
+
+    function toggleMenu() {
+      var x = document.getElementsByClassName("menu-sm-body")[0];
+      if ( x.classList.contains('expandable-sm') ) {
+        x.classList.remove("expandable-sm");
+        x.classList.add("expandable-sm-active");
+      } else {
+        x.classList.remove("expandable-sm-active");
+        x.classList.add("expandable-sm");
+      }
+      document.getElementsByClassName("menu-sm-arrow")[0].classList.toggle('rotated');
+      expandChild(-1);
+    }
+
+    function expandChild(childN) {
+      var x = document.getElementsByClassName("menu-sm-item-text");
+      for (i = 0; i < x.length; i++) {
+        if(i == childN) {
+          x[i].classList.remove("expandable-sm");
+          x[i].classList.add("expandable-sm-active");
+        } else {
+          x[i].classList.remove("expandable-sm-active");
+          x[i].classList.add("expandable-sm");
+        }
+      }
     }
   </script>
 </body>
