@@ -99,7 +99,7 @@
 <!-- NAVIGATION FOR SMALL DEVICES WITH EXPANDABLE TABS AND ANIMATION ON HOVER -->
 <!-- ------------------------------------------------------------------------ -->
   <div class="menu-sm">
-    <div class="menu-sm-header mid" onclick="toggleMenu()">
+    <div class="menu-sm-header" onclick="toggleMenu()">
       <img class="menu-sm-arrow" src="resources/images/arrow_white.png" alt="">
       <h4>Наши услуги</h4>
     </div>
@@ -732,7 +732,6 @@
         x.classList.add("expandable-sm");
       }
       document.getElementsByClassName("menu-sm-arrow")[0].classList.toggle('rotated');
-      expandChild(-1);
     }
 
     function expandChild(childN) {
