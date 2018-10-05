@@ -5,13 +5,21 @@ header {
   z-index: 1;
   height: 50px;
   width: 100%;
-  background-color: #000;
-  color: #e5e5e5;
+  background-color: #fff;
   text-align: center;
 }
-header a img {
-  height: 30px;
-  margin-top: 10px;
+
+.header-logo {
+  padding-top: 9px;
+  padding-left: 12px;
+}
+.header-logo a {
+  font-family: London;
+  font-size: 40px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 8px;
 }
 
 #social {
@@ -21,11 +29,11 @@ header a img {
 }
 #social a {
   text-decoration: none;
-  color: #e5e5e5;
+  color: #000;
   margin-right: 8px;
 }
 #social a:hover, #about a:hover {
-  color: #fff;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -37,9 +45,8 @@ header a img {
 }
 #about a {
   text-decoration: none;
-  color: #e5e5e5;
+  color: #000;
   margin-left: 8px;
-
 }
 
 @media (max-width: 539px) {

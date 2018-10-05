@@ -10,6 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="resources/css/my-index.css">
   <link rel="stylesheet" href="resources/css/header.css">
+  <link rel="stylesheet" href="resources/css/menu.css">
+  <link rel="stylesheet" href="resources/css/menu-sm.css">
   <link rel="stylesheet" href="resources/css/about.css">
   <link rel="stylesheet" href="resources/css/feedback.css">
   <link rel="stylesheet" href="resources/css/footer.css">
@@ -24,13 +26,149 @@
       <a href="https://www.instagram.com/kart.adv.production/" target="_blank">Instagram</a>
     </div>
 
-    <a href="./index.html"><img src="resources/images/logo_header.png" alt=""></a>
+    <div class="header-logo">
+      <a href="./index.html">K&ndash;art</a>
+    </div>
 
     <div id="about">
       <a href="./news.html">Новости</a>
       <a href="./feedback.html">Контакты</a>
     </div>
   </header>
+
+<!-- NAVIGATION WITH EXPANDABLE TABS AND ANIMATION ON HOVER -->
+<!-- ------------------------------------------------------ -->
+  <nav>
+    <div class="menu-item">
+      <div class="menu-item-title-div mid">
+        <div>
+          <p class="menu-item-title">Цифровая и офсетная полиграфия</p>
+        </div>
+      </div>
+      <div class="menu-item-text expandable">
+        <p onclick="openScrollToItem('tab00', 'item00')">буклеты</p>
+        <p onclick="openScrollToItem('tab00', 'item01')">каталоги</p>
+        <p onclick="openScrollToItem('tab00', 'item02')">фирменные папки</p>
+        <p onclick="openScrollToItem('tab00', 'item03')">альбомы с дизайнерскими обложками</p>
+        <p onclick="openScrollToItem('tab00', 'item04')">визитки</p>
+        <p onclick="openScrollToItem('tab00', 'item05')">открытки</p>
+        <p onclick="openScrollToItem('tab00', 'item06')">пригласительные</p>
+      </div>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-title-div mid">
+        <div>
+          <p class="menu-item-title">Широкоформатная и УФ печать</p>
+        </div>
+      </div>
+      <div class="menu-item-text expandable">
+        <p onclick="openScrollToItem('tab01', 'item10')">самоклеющая пленка</p>
+        <p onclick="openScrollToItem('tab01', 'item11')">баннер, баннерная сетка</p>
+        <p onclick="openScrollToItem('tab01', 'item12')">бумага Blueback, Backlit</p>
+        <p onclick="openScrollToItem('tab01', 'item13')">холст</p>
+        <p onclick="openScrollToItem('tab01', 'item14')">плоскопечатная УФ печать на материалах:</p>
+        <p onclick="openScrollToItem('tab01', 'item15')">печать на дизайнерских обоях</p>
+        <p onclick="openScrollToItem('tab01', 'item16')">постпечатные услуги, порезка, фрезеровка</p>
+      </div>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-title-div mid">
+        <div>
+          <p class="menu-item-title">Наружная реклама</p>
+        </div>
+      </div>
+      <div class="menu-item-text expandable">
+        <p onclick="openScrollToItem('tab02', 'item20')">вывески, лайтбокс, фреймлайт</p>
+        <p onclick="openScrollToItem('tab02', 'item21')">объемные фасадные конструкции с подсветкой</p>
+        <p onclick="openScrollToItem('tab02', 'item22')">конструктивы с широкоформатной рекламой на фасадах</p>
+        <p onclick="openScrollToItem('tab02', 'item23')">оклейка витрин самоклеющей пленкой</p>
+        <p onclick="openScrollToItem('tab02', 'item24')">оклейка авто самоклеющей пленкой</p>
+      </div>
+    </div>
+    <div class="menu-item">
+      <div class="menu-item-title-div mid">
+        <div>
+          <p class="menu-item-title">Интерьерное оформление помещений</p>
+        </div>
+      </div>
+      <div class="menu-item-text expandable">
+        <p onclick="openScrollToItem('tab03', 'item30')">брендинг</p>
+        <p onclick="openScrollToItem('tab03', 'item31')">оформление входной группы</p>
+        <p onclick="openScrollToItem('tab03', 'item32')">оформление навигационной системы</p>
+        <p onclick="openScrollToItem('tab03', 'item33')">дизайнерские обои с различными фактурами</p>
+        <p onclick="openScrollToItem('tab03', 'item34')">стеклянный, акриловый фартук для кухни</p>
+        <p onclick="openScrollToItem('tab03', 'item35')">светильники с led подсветкой</p>
+        <p onclick="openScrollToItem('tab03', 'item36')">оформление стеклянных перегородок</p>
+        <p onclick="openScrollToItem('tab03', 'item37')">оформление корпоративных мероприятий</p>
+      </div>
+    </div>
+  </nav>
+
+<!-- NAVIGATION FOR SMALL DEVICES WITH EXPANDABLE TABS AND ANIMATION ON HOVER -->
+<!-- ------------------------------------------------------------------------ -->
+  <div class="menu-sm">
+    <div class="menu-sm-header" onclick="toggleMenu()">
+      <img class="menu-sm-arrow" src="resources/images/arrow_white.png" alt="">
+      <h4>Наши услуги</h4>
+    </div>
+    <div class="menu-sm-body expandable-sm">
+      <div class="menu-sm-item mid">
+        <div>
+          <p class="menu-sm-item-title" onclick="expandChild(0)">Цифровая и офсетная полиграфия</p>
+          <div class="menu-sm-item-text expandable-sm">
+            <p onclick="openScrollToItem('tab00', 'item00')">буклеты</p>
+            <p onclick="openScrollToItem('tab00', 'item01')">каталоги</p>
+            <p onclick="openScrollToItem('tab00', 'item02')">фирменные папки</p>
+            <p onclick="openScrollToItem('tab00', 'item03')">альбомы с дизайнерскими обложками</p>
+            <p onclick="openScrollToItem('tab00', 'item04')">визитки</p>
+            <p onclick="openScrollToItem('tab00', 'item05')">открытки</p>
+            <p onclick="openScrollToItem('tab00', 'item06')">пригласительные</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-sm-item mid">
+        <div>
+          <p class="menu-sm-item-title" onclick="expandChild(1)">Широкоформатная и УФ печать</p>
+          <div class="menu-sm-item-text expandable-sm">
+            <p onclick="openScrollToItem('tab01', 'item10')">самоклеющая пленка</p>
+            <p onclick="openScrollToItem('tab01', 'item11')">баннер, баннерная сетка</p>
+            <p onclick="openScrollToItem('tab01', 'item12')">бумага Blueback, Backlit</p>
+            <p onclick="openScrollToItem('tab01', 'item13')">холст</p>
+            <p onclick="openScrollToItem('tab01', 'item14')">плоскопечатная УФ печать на материалах:</p>
+            <p onclick="openScrollToItem('tab01', 'item15')">печать на дизайнерских обоях</p>
+            <p onclick="openScrollToItem('tab01', 'item16')">постпечатные услуги, порезка, фрезеровка</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-sm-item mid">
+        <div>
+          <p class="menu-sm-item-title" onclick="expandChild(2)">Наружная реклама</p>
+          <div class="menu-sm-item-text expandable-sm">
+            <p onclick="openScrollToItem('tab02', 'item20')">вывески, лайтбокс, фреймлайт</p>
+            <p onclick="openScrollToItem('tab02', 'item21')">объемные фасадные конструкции с подсветкой</p>
+            <p onclick="openScrollToItem('tab02', 'item22')">конструктивы с широкоформатной рекламой на фасадах</p>
+            <p onclick="openScrollToItem('tab02', 'item23')">оклейка витрин самоклеющей пленкой</p>
+            <p onclick="openScrollToItem('tab02', 'item24')">оклейка авто самоклеющей пленкой</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-sm-item mid">
+        <div>
+          <p class="menu-sm-item-title" onclick="expandChild(3)">Интерьерное оформление помещений</p>
+          <div class="menu-sm-item-text expandable-sm">
+            <p onclick="openScrollToItem('tab03', 'item30')">брендинг</p>
+            <p onclick="openScrollToItem('tab03', 'item31')">оформление входной группы</p>
+            <p onclick="openScrollToItem('tab03', 'item32')">оформление навигационной системы</p>
+            <p onclick="openScrollToItem('tab03', 'item33')">дизайнерские обои с различными фактурами</p>
+            <p onclick="openScrollToItem('tab03', 'item34')">стеклянный, акриловый фартук для кухни</p>
+            <p onclick="openScrollToItem('tab03', 'item35')">светильники с led подсветкой</p>
+            <p onclick="openScrollToItem('tab03', 'item36')">оформление стеклянных перегородок</p>
+            <p onclick="openScrollToItem('tab03', 'item37')">оформление корпоративных мероприятий</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="about">
     <div class="about-content">
@@ -106,6 +244,6 @@
       </div>
     </div>
   </footer>
-
+  <script src="./resources/js/app.js"></script>
 </body>
 </html>
