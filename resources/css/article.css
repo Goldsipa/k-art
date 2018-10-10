@@ -44,6 +44,7 @@
   color: #79828B !important;
   font-style: italic !important;
   font-size: 14px !important;
+  text-indent: 0 !important;
 }
 
 @media (max-width: 539px) {
