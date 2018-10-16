@@ -42,3 +42,18 @@
   box-shadow: inset -64px 0px 72px -30px rgba(0,0,0,0.3);
   transition: box-shadow 0.4s ease-in-out;
 }
+
+@media (max-width: 767px) {
+  .leftButton {
+    box-shadow: inset 32px 0px 36px -30px rgba(0,0,0,0);
+  }
+  .leftButton:hover {
+    box-shadow: inset 32px 0px 36px -30px rgba(0,0,0,0.3);
+  }
+  .rightButton {
+    box-shadow: inset -32px 0px 36px -30px rgba(0,0,0,0);
+  }
+  .rightButton:hover {
+    box-shadow: inset -32px 0px 36px -30px rgba(0,0,0,0.3);
+  }
+}
