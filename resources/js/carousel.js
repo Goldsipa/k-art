@@ -4,7 +4,7 @@ for (let i = 0; i < carousels.length; i++) {
 }
 
 function createSliderStore(carouselId) {
-  var i = carouselId;
+  var i = 0;
 
   var carousel = document.getElementsByClassName('carousel')[carouselId];
   var slides = carousel.getElementsByClassName('slide');
