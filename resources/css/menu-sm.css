@@ -58,7 +58,7 @@
   display: block;
   width: auto;
   opacity: 1;
-  max-height: 420px;
+  max-height: 520px;
   padding-bottom: 8px;
   transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
 }
