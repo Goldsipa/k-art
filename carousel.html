@@ -6,14 +6,24 @@
   <title>Carousel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="resources/css/carousel.css">
+  <style>
+    .carousel {
+      width: 400px;
+      height: 400px;
+    }
+  </style>
 </head>
 <body>
   <div class="carousel">
     <div class="slide active" style="background-image: url(./resources/images/brochure.jpg);"></div>
     <div class="slide" style="background-image: url(./resources/images/catalogue.jpg);"></div>
     <div class="slide" style="background-image: url(./resources/images/folder.jpg);"></div>
-    <div class="leftButton" onclick="showPrev()"></div>
-    <div class="rightButton" onclick="showNext()"></div>
+    <div class="leftButton">
+      <img src="./resources/images/arrow_white.png" alt="">
+    </div>
+    <div class="rightButton">
+      <img src="./resources/images/arrow_white.png" alt="">
+    </div>
   </div>
   <div class="carousel">
     <div class="slide active" style="background-image: url(./resources/images/brochure.jpg);"></div>
