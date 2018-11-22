@@ -1,0 +1,221 @@
+.tile:nth-child(1)::before {background-image: url('../images/fwd/digital_2.jpg')}
+.tile:nth-child(2)::before {background-image: url('../images/fwd/wide_1.jpg')}
+.tile:nth-child(3)::before {background-image: url('../images/fwd/outer_4.jpg')}
+.tile:nth-child(4)::before {background-image: url('../images/fwd/inter_1.jpg')}
+
+html, body, .story {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.story {
+  width: 200vw;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.story-l, .story-r {
+  width: 50vw;
+  height: 100%;
+  float: left;
+}
+
+.story-l {
+  padding-top: 8vh;
+  padding-left: 4vw;
+  padding-right: 8vw;
+  box-sizing: border-box;
+}
+
+.story-l-logo div {
+  font-size: 8.5vh;
+  font-family: London;
+  color: #8a8b8a;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0.6vh #8a8b8a99;
+}
+
+.story-l-our, .story-l-slogan, .story-l-text {
+  width: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.story-l-our {
+  width: 30vh;
+  animation: our 1.5s ease;
+}
+.story-l-our h1 {
+  width: 30vh;
+  margin: 8vh 0 0 0;
+  font-size: 6.5vh;
+  color: #252525;
+  font-weight: 400;
+  text-shadow: 2px 2px 0.5vh #00000044;
+}
+@keyframes our {
+  0%   {width: 0;}
+  50%   {width: 0;}
+  100% {width: 30vh;}
+}
+
+.story-l-slogan {
+  width: 38vw;
+  animation: slogan 2s ease;
+}
+.story-l-slogan h3 {
+  width: 38vw;
+  font-size: 3.5vh;
+  color: #252525;
+  font-weight: 400;
+  font-style: italic;
+  text-shadow: 1px 1px 0.3vh #00000044;
+}
+@keyframes slogan {
+  0%   {width: 0;}
+  50%   {width: 0;}
+  100% {width: 38vw;}
+}
+
+.story-l-text {
+  width: 38vw;
+  animation: text 2.5s ease;
+}
+.story-l-text p {
+  width: 38vw;
+  font-size: 2.5vh;
+  line-height: 4.5vh;
+  padding-right: 2vw;
+  color: #333333;
+  font-weight: 330;
+  text-shadow: 1px 1px 0.2vh #00000044;
+}
+@keyframes text {
+  0%   {width: 0;}
+  50%   {width: 0;}
+  100% {width: 38vw;}
+}
+
+.story-r {
+  background: #e4e4e4;
+  animation: story-r 3s ease;
+}
+@keyframes story-r {
+  0%   {margin-left: 50vw;}
+  60%   {margin-left: 50vw;}
+  100% {margin-left: 0;}
+}
+
+.tile {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  float: left;
+  transition-delay: 0.2s;
+  animation: tile 4s ease;
+}
+@keyframes tile {
+  0%   {pointer-events: none;}
+  100% {pointer-events: none;}
+}
+.tile::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity:0.75;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-container:hover .tile-card {
+  transform: rotateY(180deg);
+}
+
+.tile-card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.5s ease;
+  transition-delay: 0.2s;
+  animation: tile-card 4s ease;
+}
+@keyframes tile-card {
+  0%   {opacity: 0;}
+  75%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.tile-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  margin: 20px;
+  backface-visibility: hidden;
+  background-color: rgb(255, 255, 255, 0.85);
+
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+.tile-front h4 {
+  width: calc(100% - 20px);
+  font-size: 2.5vh;
+  color: #252525;
+  margin: 0;
+  padding: 0 10px;
+  padding-top: 20vh;  
+  text-align: center;
+  font-weight: 500;
+}
+
+.tile-back {
+  height: calc(100% - 60px);
+  width: calc(100% - 80px);
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255, 0.85);
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+.tile-back div p {
+  width: calc(25vw - 80px);
+  font-size: 2vh;
+  margin: 0.5vh;
+  margin-left: 0;
+  margin-right: 0;
+  color: #252525;
+  font-weight: 400;
+}
+
+.tile-back div {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 0;
+  animation-name: tile-text-back;
+  animation-duration: 3s;
+}
+.tile:hover .tile-back > div {
+  width: calc(25vw - 80px);
+  animation-name: tile-text;
+  animation-duration: 3s;
+}
+
+@keyframes tile-text {
+  0%   {width: 0;}
+  50%  {width: 0;}
+  100% {width: calc(25vw - 80px);}
+}
+
+@keyframes tile-text-back {
+  0%   {width: calc(25vw - 80px);}
+  50%  {width: 0;}
+  100% {width: 0;}
+}
