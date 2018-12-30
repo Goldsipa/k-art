@@ -10,7 +10,8 @@
   <link rel="shortcut icon" href="resources/images/logo_big.jpg" type="image/x-icon">
   <link rel="stylesheet" href="resources/css/my-index.css">
   <link rel="stylesheet" href="resources/css/header.css">
-  <link rel="stylesheet" href="resources/css/story.css">
+  <!-- <link rel="stylesheet" href="resources/css/story.css"> -->
+  <link rel="stylesheet" href="resources/css/storynew.css">  
   <link rel="stylesheet" href="resources/css/menu.css">
   <link rel="stylesheet" href="resources/css/menu-sm.css">
   <link rel="stylesheet" href="resources/css/content.css">
@@ -21,7 +22,7 @@
 
 <!-- HEADER - WITH FACEBOOK, INSTAGRAM, ABOUT COMPANY AND CONTACTS -->
 <!-- ------------------------------------------------------------- -->
-  <header>
+  <header class="header-main">
     <div id="social">
       <a href="https://www.facebook.com/yulianna.kart/" target="_blank">Facebook</a>
       <a href="https://www.instagram.com/kart.adv.production/" target="_blank">Instagram</a>
@@ -39,7 +40,7 @@
 
 <!-- NAVIGATION WITH EXPANDABLE TABS AND ANIMATION ON HOVER -->
 <!-- ------------------------------------------------------ -->
-  <nav>
+  <nav class="nav-main">
     <div class="menu-item">
       <div class="menu-item-title-div mid">
         <div>
@@ -173,7 +174,7 @@
 
 <!-- DIV WITH STORY ABOUT COMPANY -->
 <!-- ------------------------------------ -->
-  <section class="story">
+  <!-- <section class="story">
     <article class="story-item">
       <div class="story-item-content">
         <div class="story-item-image">
@@ -197,8 +198,91 @@
         </div>
       </div>
     </article>
-  </section>
-  
+  </section> -->
+  <div class="story-outer">
+    <div class="story">
+      <div class="story-l">
+        <!-- <div class="story-l-logo"><div>K-art</div></div> -->
+        <div class="story-l-our"><h1>Our Story</h1></div>
+        <div class="story-l-slogan"><h3>
+          K-art вляется текст-заполнитель обычно используется в графических
+        </h3></div>
+        <div class="story-l-text"><p>
+            Еще вчера, а это чуть больше 10 лет назад ;), мы знали все о
+            широкоформатной полиграфии... баннерные ткани, самоклейка, бумага...
+            но сегодня мы уже команда единомышленников, которая предлагает Вам,
+            дорогие друзья, цифровую печать еще и на дизайнерских обоях и на различных 
+            жестких материалах с прямой печатью ДСП, ПВХ, акрил, композит, зеркала и стекла... 
+        </p></div>
+      </div>
+      <div class="story-r">
+        <div class="tile card-container">
+          <div class="tile-card">
+            <div class="tile-front">
+              <h4>Цифровая и офсетная полиграфия</h4>
+            </div>
+            <div class="tile-back">
+                <div><p>• буклеты</p></div>
+                <div><p>• каталоги</p></div>
+                <div><p>• фирменные папки</p></div>
+                <div><p>• альбомы с дизайнерскими обложками</p></div>
+                <div><p>• визитки</p></div>
+                <div><p>• открытки</p></div>
+                <div><p>• пригласительные</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="tile card-container">
+          <div class="tile-card">
+            <div class="tile-front">
+              <h4>Широкоформатная и УФ печать</h4>
+            </div>
+            <div class="tile-back">
+              <div><p>• самоклеющая пленка</p></div>
+              <div><p>• баннер, баннерная сетка</p></div>
+              <div><p>• бумага Blueback, Backlit</p></div>
+              <div><p>• холст</p></div>
+              <div><p>• плоскопечатная УФ печать на материалах</p></div>
+              <div><p>• печать на дизайнерских обоях</p></div>
+              <div><p>• постпечатные услуги, порезка, фрезеровка</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="tile card-container">
+          <div class="tile-card">
+            <div class="tile-front">
+              <h4>Наружная реклама</h4>
+            </div>
+            <div class="tile-back">
+              <div><p>• вывески, лайтбокс, фреймлайт</p></div>
+              <div><p>• объемные фасадные конструкции с подсветкой</p></div>
+              <div><p>• конструктивы с широкоформатной рекламой на фасадах</p></div>
+              <div><p>• оклейка витрин самоклеющей пленкой</p></div>
+              <div><p>• оклейка авто самоклеющей пленкой</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="tile card-container">
+          <div class="tile-card">
+            <div class="tile-front">
+              <h4>Интерьерное оформление помещений</h4>
+            </div>
+            <div class="tile-back">
+              <div><p>• брендинг</p></div>
+              <div><p>• оформление входной группы</p></div>
+              <div><p>• оформление навигационной системы</p></div>
+              <div><p>• дизайнерские обои</p></div>
+              <div><p>• стеклянный, акриловый фартук для кухни</p></div>
+              <div><p>• светильники с led подсветкой</p></div>
+              <div><p>• оформление стеклянных перегородок</p></div>
+              <div><p>• оформление корпоративных мероприятий</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <!-- DIV WITH CONTENT THAT SHOULD BE TABS -->
 <!-- ------------------------------------ -->
   <!-- TAB 0: 7 -->
@@ -993,6 +1077,27 @@
 
       localStorage.clear();
     });
+  </script>
+  <script>
+    function openGallery() {
+      document.getElementsByTagName('body')[0].classList.toggle("body-gallery");
+      document.getElementsByClassName('story')[0].classList.toggle('story-gallery');
+      document.getElementsByTagName('header')[0].classList.toggle("header-gallery");
+      document.getElementsByTagName('nav')[0].classList.toggle("nav-gallery");
+    }
+  </script>
+  <script>
+    var tiles = document.getElementsByClassName('tile-back');
+    for (let i = 0; i < tiles.length; i++) {
+      var children = tiles[i].children;
+      for (let j = 0; j < children.length; j++) {
+        children[j].addEventListener("click", function () {
+          var tab = 'tab0' + i;
+          var item = 'item' + i + j;
+          scrollToItem(tab, item);
+        })
+      }
+    }
   </script>
 </body>
 </html>
