@@ -33,7 +33,7 @@ nav {
   color: #fff;
 }
 .menu-item-text {
-  /* text-align: left; */
+  text-align: left;
   display: none;
   background-color: rgba(138, 139, 138, 0.85);
 }
@@ -72,7 +72,7 @@ nav {
 .menu-item-text p:hover {
   color: #fff;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   nav {
     display: none;
   }

@@ -9,7 +9,7 @@ html, body, .story-outer, .story {
 }
 .header-main {
   z-index: 2;
-  width: 50%;
+  width: 49.9999%;
   transition: all 0.5s ease;
 }
 .nav-main {
@@ -54,7 +54,7 @@ html, body, .story-outer, .story {
 }
 
 .story-outer {
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -62,14 +62,15 @@ html, body, .story-outer, .story {
 .story {
   /* padding-top: 50px; */
   /* box-sizing: border-box; */
-  width: 200vw;
+  width: 199.9999%; /* in order to have no 1px difference with next block */
   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  background-color: #fafafa;
   overflow-x: hidden;
   /* overflow-y: hidden; */
 }
 
 .story-l, .story-r {
-  width: 50vw;
+  width: 25%;
   height: 100%;
   float: left;
   line-height: 0;
@@ -79,9 +80,9 @@ html, body, .story-outer, .story {
 }
 
 .story-l {
-  padding-top: 8vh;
-  padding-left: 4vw;
-  padding-right: 8vw;
+  padding-top: 4%;
+  padding-left: 2%;
+  padding-right: 4%;
   box-sizing: border-box;
 }
 
@@ -96,6 +97,7 @@ html, body, .story-outer, .story {
 
 .story-l-our, .story-l-slogan, .story-l-text {
   width: 0;
+  padding-left: 10px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -106,7 +108,7 @@ html, body, .story-outer, .story {
 }
 .story-l-our h1 {
   width: 30vh;
-  margin: 8vh 0 0 0;
+  margin: 0;
   font-size: 6.5vh;
   color: #252525;
   font-weight: 400;
@@ -157,7 +159,7 @@ html, body, .story-outer, .story {
 
 .story-r {
   background: #e4e4e4;
-  animation: story-r 3s ease;
+  /* animation: story-r 2.5s ease; */
 }
 @keyframes story-r {
   0%   {margin-left: 50vw;}
@@ -171,7 +173,7 @@ html, body, .story-outer, .story {
   height: 50%;
   float: left;
   transition-delay: 0.2s;
-  animation: tile 4s ease;
+  animation: tile 1.5s ease;
 }
 @keyframes tile {
   0%   {pointer-events: none;}
@@ -199,13 +201,13 @@ html, body, .story-outer, .story {
   height: 100%;
   width: 100%;
   transform-style: preserve-3d;
-  transition: all 1.5s ease;
+  transition: all 1s ease;
   transition-delay: 0.2s;
-  animation: tile-card 4s ease;
+  animation: tile-card 2s ease;
 }
 @keyframes tile-card {
   0%   {opacity: 0;}
-  75%   {opacity: 0;}
+  60%   {opacity: 0;}
   100% {opacity: 1;}
 }
 
@@ -257,14 +259,14 @@ html, body, .story-outer, .story {
 .tile-back div {
   overflow-x: hidden;
   overflow-y: hidden;
-  width: 0;
-  animation-name: tile-text-back;
-  animation-duration: 3s;
+  /* width: 0; */
+  /* animation-name: tile-text-back; */
+  /* animation-duration: 3s; */
 }
 .tile:hover .tile-back > div {
   width: calc(25vw - 80px);
-  animation-name: tile-text;
-  animation-duration: 3s;
+  /* animation-name: tile-text; */
+  /* animation-duration: 3s; */
 }
 
 @keyframes tile-text {
@@ -277,4 +279,19 @@ html, body, .story-outer, .story {
   0%   {width: calc(25vw - 80px);}
   50%  {width: 0;}
   100% {width: 0;}
+}
+
+@media (max-width: 991px) {
+  .nav-main {
+    display: none;
+  }
+  .header-main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .story-outer {
+    display: none;
+  }
 }
