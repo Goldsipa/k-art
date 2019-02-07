@@ -12,7 +12,7 @@ function scrollToItem(tab, item) {
   if(w < 768) {
     offset = rect.top - 50;
   } else {
-    offset = rect.top - 100;
+    offset = rect.top - 99;
   }
   window.scrollBy({
     top: offset,
