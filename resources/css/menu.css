@@ -5,7 +5,7 @@ nav {
   color: #e5e5e5;
   background-color: #8A8B8A;
   text-align: center;
-  box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.15);;
 
   transition: padding-bottom 0.2s ease-in;
 
@@ -18,7 +18,7 @@ nav {
   box-sizing: border-box;
   padding: 0;
   background-color: #8A8B8A;
-  box-shadow: inset 0px 15px 20px -15px rgba(0,0,0,0.7);
+  box-shadow: inset 0px 8px 10px -10px rgba(0,0,0,0.5);
 }
 .menu-item-title-div {
   height: 50px;
